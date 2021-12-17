@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/login">Login</Link>
@@ -24,13 +24,13 @@ function App() {
               <Link to="/treino">Treino</Link>
             </li>
           </ul>
-        </nav>
+       </nav> */}
 
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/peso" element={<Peso />} />
-          <Route path="/treino" element={<Treino />} />
+          <Route path="/" element={<Treino />} />
         </Routes>
       </div>
     </Router>
